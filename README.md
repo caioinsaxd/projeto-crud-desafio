@@ -12,13 +12,24 @@ Para rodar o projeto localmente, você precisa dos seguintes programas instalado
 ## Instruções de Instalação
 
 **1. Clone o repositório:**
-
+```bash 
+git clone https://github.com/caioinsaxd/projeto-crud-desafio.git 
+```
 
 **2. Importe o banco de dados:**
 
 - Abra o MySQL Workbench
-- Crie um banco de dados, por exemplo, `pessoas` ou `crud_membros`.
-- Importe o arquivo de exportação do banco de dados.
+- Crie um banco de dados, por exemplo, `projeto` ou `crud_membros`.
+- Importe o arquivo de exportação do banco de dados na pasta `database`.
+- Ou então forneça o script SQL para criar as tabelas.
+```sql
+CREATE TABLE x (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(15),
+);
+```
 
 **3. Configuração do Banco de Dados no PHP:**
 
