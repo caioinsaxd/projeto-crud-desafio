@@ -35,6 +35,7 @@ CREATE TABLE x (
 
 Abra o arquivo `conexao.php` e edite as configurações de conexão com o banco de dados, caso necessário (usuário, senha, nome do banco, etc):
 
+![alt text](imagens/conexao.png)
 
 **4. Coloque os arquivos na pasta do servidor:**
 
