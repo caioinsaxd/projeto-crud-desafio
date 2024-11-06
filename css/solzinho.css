@@ -1,0 +1,27 @@
+
+#solzinho {
+    position: absolute;
+    top: 0%;  
+    left: 50%;
+    transform: translateX(-50%); /**/
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 153, 1) 50%, rgba(255, 255, 153, 0.6) 100%); 
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 255, 153, 0.6); 
+    z-index: -2; 
+}
+
+/*efeito halo */
+#solzinho::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 255, 153, 0.3) 30%, rgba(255, 255, 153, 0.1) 70%); 
+    border-radius: 50%;
+    z-index: -1; 
+}
